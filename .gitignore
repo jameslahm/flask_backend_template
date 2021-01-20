@@ -1,0 +1,15 @@
+# python
+venv
+__pycache__
+
+# js
+node_modules
+
+# test
+.coverage
+htmlcov
+coverage.xml
+
+# mis
+*.zip
+*.sqlite

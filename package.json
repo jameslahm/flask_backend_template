@@ -1,0 +1,27 @@
+{
+  "name": "flask_backend_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jameslahm/flask_backend_template.git",
+  "author": "wangao <1366463855@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "archive": "git archive -o server.zip --format zip HEAD"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "husky": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
