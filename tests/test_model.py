@@ -59,7 +59,7 @@ class UserModelTestCase(unittest.TestCase):
         self.assertTrue(User.verify_auth_token(token))
 
     def test_user_role(self):
-        u = User(email='fake@example.com', password='cat')
+        u = User(email='fakehhh@example.com', password='cat')
         self.assertTrue(u.role.name=='normal')
 
     def test_administrator_role(self):
