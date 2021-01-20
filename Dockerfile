@@ -6,7 +6,7 @@ RUN mkdir /server
 COPY ./ /server
 WORKDIR /server
 RUN ls && pip install uwsgi -i https://pypi.tuna.tsinghua.edu.cn/simple \
-    && pip install -r requirements.prod.txt -i https://pypi.tuna.tsinghua.edu.cn/simple \
+    && pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple \
     && chmod +x start.sh 
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 ENTRYPOINT [ "" ]

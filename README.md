@@ -1,3 +1,5 @@
+# FLASK BACKEND TEMPLATE
+
 ## Install Vscode Extensions
 ```
 pylance
@@ -47,6 +49,11 @@ flask db upgrade
 ## Init Database
 ```bash
 flask init-db
+```
+
+## Deploy
+```bash
+docker-compose up
 ```
 
 ## Commit Message
